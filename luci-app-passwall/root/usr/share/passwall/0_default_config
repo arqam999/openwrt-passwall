@@ -1,0 +1,69 @@
+
+config global
+	option enabled '0'
+	option socks_enabled '0'
+	option tcp_node 'nil'
+	option udp_node 'tcp'
+	option dns_mode 'dns2tcp'
+	option remote_dns '1.1.1.1'
+	option filter_proxy_ipv6 '0'
+	option tcp_proxy_mode 'global'
+	option udp_proxy_mode 'global'
+	option localhost_tcp_proxy_mode 'default'
+	option localhost_udp_proxy_mode 'default'
+	option close_log_tcp '0'
+	option close_log_udp '0'
+	option loglevel 'warning'
+	option trojan_loglevel '2'
+
+config global_haproxy
+	option balancing_enable '0'
+
+config global_delay
+	option auto_on '0'
+	option start_daemon '1'
+	option start_delay '1'
+
+config global_forwarding
+	option tcp_no_redir_ports 'disable'
+	option udp_no_redir_ports 'disable'
+	option tcp_proxy_drop_ports 'disable'
+	option udp_proxy_drop_ports 'disable'
+	option tcp_redir_ports '1:65535'
+	option udp_redir_ports '1:65535'
+	option accept_icmp '0'
+	option tcp_proxy_way 'tproxy'
+	option ipv6_tproxy '0'
+	option sniffing '1'
+	option route_only '0'
+
+config global_other
+	option nodes_ping 'auto_ping tcping'
+
+config global_rules
+	option auto_update '0'
+	option chnlist_update '0'
+	option chnroute_update '0'
+	option chnroute6_update '0'
+	option gfwlist_update '0'
+	option geosite_update '0'
+	option geoip_update '0'
+	option v2ray_location_asset '/usr/share/v2ray/'
+
+config global_app
+	option v2ray_file '/usr/bin/v2ray'
+	option xray_file '/usr/bin/xray'
+	option trojan_go_file '/usr/bin/trojan-go'
+	option brook_file '/usr/bin/brook'
+	option hysteria_file '/usr/bin/hysteria'
+
+config global_subscribe
+	option subscribe_proxy '0'
+	option filter_keyword_mode '1'
+
+config auto_switch
+	option enable '0'
+	option testing_time '1'
+	option connect_timeout '3'
+	option retry_num '3'
+	option shunt_logic '1'
