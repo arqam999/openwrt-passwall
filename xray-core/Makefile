@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=Xray-core
-PKG_VERSION:=1.7.5.3
+PKG_VERSION:=1.7.5.1
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/mssvpn/Xray-Lite/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=fa555b7be077a6682403540bfe4326169f968bce98829977a3a4b9e59e106da0
+PKG_SOURCE_URL:=https://codeload.github.com/mssvpn/Xray-core/tar.gz/v$(PKG_VERSION)?
+PKG_HASH:=475fc12b54587fe6a45ec3e1790ff76a7473c2c6f9586328bd910b096ad4f85e
 
 PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 PKG_LICENSE:=MPL-2.0
@@ -16,7 +16,7 @@ PKG_BUILD_DEPENDS:=golang/host
 PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
 
-GO_PKG:=github.com/xtls/xray-core
+GO_PKG:=github.com/mssvpn/Xray-core
 GO_PKG_BUILD_PKG:=$(GO_PKG)/main
 GO_PKG_LDFLAGS_X:= \
 	$(GO_PKG)/core.build=OpenWrt \
