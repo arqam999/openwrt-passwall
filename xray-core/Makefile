@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=Xray-core
-PKG_VERSION:=1.7.5.1
+PKG_VERSION:=1.7.5.3
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/mssvpn/Xray-core/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=475fc12b54587fe6a45ec3e1790ff76a7473c2c6f9586328bd910b096ad4f85e
+PKG_SOURCE_URL:=https://codeload.github.com/mssvpn/Xray-Lite/tar.gz/v$(PKG_VERSION)?
+PKG_HASH:=fa555b7be077a6682403540bfe4326169f968bce98829977a3a4b9e59e106da0
 
 PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 PKG_LICENSE:=MPL-2.0
